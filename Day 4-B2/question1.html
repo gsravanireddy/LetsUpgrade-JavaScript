@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    button{
+        background-color: brown;
+        padding: 15px;
+        font-size: 20px;
+        border-radius: 10px;
+        color: white;
+    }
+    button:hover{
+        color: teal;
+        background-color: white;
+    }
+</style>
+</head>
+<body>
+   <h4><pre> Question 1 Create a webpage containing an image and three buttons
+
+            A. On click of the second button a change the existing image to a new image 
+
+            B. On click of the third button change it once again 
+            
+            C. On click of first, the first image should come back
+   </pre></h4>
+   <br>
+
+<br><br>
+<img id="count" src="https://cdn.pixabay.com/photo/2020/04/18/18/44/youtuber-5060540_960_720.jpg" alt="" srcset="" width="20%" height="20%"> 
+<br>
+<button onclick="first()" type="button">First Button</button>
+<button onclick="second()" type="button">Second Button</button>
+<button onclick="third()" type="button">Third Button</button>
+
+<script>
+        const img1=document.getElementById('count');
+    function third(){
+        const newImg="https://cdn.pixabay.com/photo/2020/04/14/10/56/gamer-5041976_960_720.jpg"
+        img1.src = newImg;
+    }
+    function second(){
+        const newImg2="https://cdn.pixabay.com/photo/2019/01/30/07/45/web-3963945_960_720.jpg"
+        img1.src = newImg2;
+    }
+    function first(){
+        const newImg3="https://cdn.pixabay.com/photo/2020/04/18/18/44/youtuber-5060540_960_720.jpg"
+        img1.src = newImg3;
+    }
+</script>
+</body>
+
+</html>
